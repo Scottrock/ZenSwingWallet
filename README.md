@@ -15,8 +15,7 @@ presents the information in a user-friendly manner.
 **For security reasons it is recommended to always build the GUI wallet program from GitHub**
 **[source](https://github.com/vaklinov/zclassic-swing-wallet-ui/archive/master.zip).**
 The details of how to build it are described below (easy to follow).
-Users who insist on downloading a binary release may instead 
-use [Zen Desktop GUI Wallet - binary release 0.58.2-beta](https://github.com/vaklinov/zclassic-swing-wallet-ui/blob/master/docs/Release_0.58.2-beta.md)
+Users who insist on downloading a binary release - try another product 
 
 
 1. Operating system and tools
