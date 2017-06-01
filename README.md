@@ -5,7 +5,7 @@
 This program provides a Graphical User Interface (GUI) for the Zen client tools that acts as a wrapper and 
 presents the information in a user-friendly manner.
 
-![Screenshot](https://github.com/vaklinov/zclassic-swing-wallet-ui/raw/master/docs/ZClassicWallet.png "Main Window")
+![Screenshot](https://github.com/Scottrock/zen-swing-wallet-ui/blob/master/docs/ZenWallet.png "Main Window")
 
 #### New/Experimental: [Zen Desktop GUI Wallet for Windows](https://github.com/vaklinov/zclassic-swing-wallet-ui/blob/master/docs/Readme-Windows.md) is available
 
