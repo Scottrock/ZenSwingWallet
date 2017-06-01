@@ -75,7 +75,7 @@ public class AddressBookPanel extends JPanel {
         newContactButton.addActionListener(new NewContactActionListener());
         panel.add(newContactButton);
                 
-        sendCashButton = new JButton("Send ZCL");
+        sendCashButton = new JButton("Send ZEN");
         sendCashButton.addActionListener(new SendCashActionListener());
         sendCashButton.setEnabled(false);
         panel.add(sendCashButton);
@@ -201,7 +201,7 @@ public class AddressBookPanel extends JPanel {
             names.add(name);
             
             String address = (String) JOptionPane.showInputDialog(AddressBookPanel.this,
-                    "Pleae enter the t-address or z-address of "+name,
+                    "Pleae enter the zn-address or ZC-address of "+name,
                     "Add new contact step 2",
                     JOptionPane.PLAIN_MESSAGE,
                     null,
@@ -248,7 +248,7 @@ public class AddressBookPanel extends JPanel {
             
             JPopupMenu menu = new JPopupMenu();
             
-            JMenuItem sendCash = new JMenuItem("Send ZCL to "+entry.name);
+            JMenuItem sendCash = new JMenuItem("Send ZEN to "+entry.name);
             sendCash.addActionListener(new SendCashActionListener());
             menu.add(sendCash);
             
@@ -277,7 +277,7 @@ public class AddressBookPanel extends JPanel {
                 return;
             }
             String name = entries.get(row).name;
-            sendCashButton.setText("Send ZCL to "+name);
+            sendCashButton.setText("Send ZEN to "+name);
             sendCashButton.setEnabled(true);
             deleteContactButton.setText("Delete contact "+name);
             deleteContactButton.setEnabled(true);

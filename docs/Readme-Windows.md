@@ -1,5 +1,7 @@
 # [ZClassic](http://zclassic.org) Desktop GUI Wallet - for Windows
 
+This version of the swing wallet does not have a windows version at present - when it does, you could follow these instructions:
+
 The [ZClassic](http://zclassic.org) development team has released a [version for Windows](https://github.com/z-classic/zclassic/releases/tag/v1.0.5a).
 Before installing the GUI wallet on Windows you need to install ZClassic on Windows.
 

@@ -159,7 +159,7 @@ public class TransactionTable
 			JLabel infoLabel = new JLabel(
 					"<html><span style=\"font-size:9px;\">" +
 					"The table shows the information about the transaction with technical details as " +
-					"they appear at ZClassic network level." +
+					"they appear at Zen network level." +
 				    "</span>");
 			infoLabel.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
 			tempPanel.add(infoLabel, BorderLayout.CENTER);

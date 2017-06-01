@@ -71,7 +71,7 @@ public class ZCashInstallationObserver
 		if (!dir.exists() || dir.isFile())
 		{
 			throw new InstallationDetectionException(
-				"The ZClassic installation directory " + installDir + " does not exist or is not " +
+				"The Zen installation directory " + installDir + " does not exist or is not " +
 			    "a directory or is otherwise inaccessible to the wallet!");
 		}
 
@@ -85,15 +85,15 @@ public class ZCashInstallationObserver
 		}
 
 		System.out.println("Using ZClassic utilities: " +
-		                   "zcashd: "    + ((zcashd != null) ? zcashd.getCanonicalPath() : "<MISSING>") + ", " +
-		                   "zcash-cli: " + ((zcashcli != null) ? zcashcli.getCanonicalPath() : "<MISSING>"));
+		                   "zend: "    + ((zcashd != null) ? zcashd.getCanonicalPath() : "<MISSING>") + ", " +
+		                   "zen-cli: " + ((zcashcli != null) ? zcashcli.getCanonicalPath() : "<MISSING>"));
 
 		if ((zcashd == null) || (zcashcli == null) || (!zcashd.exists()) || (!zcashcli.exists()))
 		{
 			throw new InstallationDetectionException(
-				"The ZClassic GUI Wallet installation directory " + installDir + " needs\nto contain " +
-				"the command line utilities zcashd and zcash-cli. At least one of them is missing! \n" +
-				"Please place files ZClassicSwingWalletUI.jar, " + OSUtil.getZCashCli() + ", " + 
+				"The Zen GUI Wallet installation directory " + installDir + " needs\nto contain " +
+				"the command line utilities zend and zen-cli. At least one of them is missing! \n" +
+				"Please place files ZenSwingWalletUI.jar, " + OSUtil.getZCashCli() + ", " + 
 				OSUtil.getZCashd() + " in the same directory.");
 		}
 	}
@@ -160,7 +160,7 @@ public class ZCashInstallationObserver
 					} catch (NumberFormatException nfe) { /* TODO: Log or handle exception */ };
 				} else if (i == 10)
 				{
-					if ((token.equals("zcashd")) || (token.endsWith("/zcashd")))
+					if ((token.equals("zend")) || (token.endsWith("/zend")))
 					{
 						info.status = DAEMON_STATUS.RUNNING;
 						foundZCash = true;
@@ -226,11 +226,11 @@ public class ZCashInstallationObserver
 
 				if (i == 0)
 				{
-					if (token.equals("zcashd.exe") || token.equals("zcashd"))
+					if (token.equals("zend.exe") || token.equals("zend"))
 					{
 						info.status = DAEMON_STATUS.RUNNING;
 						foundZCash = true;
-						//System.out.println("ZCashd process data is: " + line);
+						//System.out.println("Zend process data is: " + line);
 					}
 				} else if ((i >= 4) && foundZCash)
 				{
@@ -253,7 +253,7 @@ public class ZCashInstallationObserver
 				} catch (NumberFormatException nfe)
 				{
 					info.residentSizeMB = 0;
-					System.out.println("Error: could not find the numeric memory size of zcashd: " + size);
+					System.out.println("Error: could not find the numeric memory size of zend: " + size);
 				};
 				
 				break;

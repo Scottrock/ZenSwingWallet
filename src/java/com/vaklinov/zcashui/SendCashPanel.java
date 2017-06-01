@@ -151,7 +151,7 @@ public class SendCashPanel
 		tempPanel.add(new JLabel("Memo (optional):     "));
 		tempPanel.add(new JLabel(
 				"<html><span style=\"font-size:8px;\">" +
-				"* Memo may be specified only if the destination is a Z (Private) address!" +
+				"* Memo may be specified only if the destination is a ZC (Private) address!" +
 			    "</span>  "));
 		sendCashPanel.add(tempPanel);
 		
@@ -171,7 +171,7 @@ public class SendCashPanel
 		tempPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 0, 0));
 		tempPanel.add(destinationAmountField = new JTextField(13));
 		destinationAmountField.setHorizontalAlignment(SwingConstants.RIGHT);
-		tempPanel.add(new JLabel(" ZCL    "));
+		tempPanel.add(new JLabel(" ZEN    "));
 		amountPanel.add(tempPanel, BorderLayout.SOUTH);
 
 		JPanel feePanel = new JPanel(new BorderLayout());
@@ -180,7 +180,7 @@ public class SendCashPanel
 		tempPanel.add(transactionFeeField = new JTextField(13));
 		transactionFeeField.setText("0.0001"); // Default value
 		transactionFeeField.setHorizontalAlignment(SwingConstants.RIGHT);		
-		tempPanel.add(new JLabel(" ZCL"));
+		tempPanel.add(new JLabel(" ZEN"));
 		feePanel.add(tempPanel, BorderLayout.SOUTH);
 
 		amountAndFeePanel.add(amountPanel);
@@ -203,11 +203,11 @@ public class SendCashPanel
 		warningPanel.setLayout(new BorderLayout(7, 3));
 		JLabel warningL = new JLabel(
 				"<html><span style=\"font-size:8px;\">" +
-				" * When sending cash from a T (Transparent) address, the remining unspent balance is sent to another " +
-				"auto-generated T address. When sending from a Z (Private) address, the remining unspent balance remains with " +
-				"the Z address. In both cases the original sending address cannot be used for sending again until the " +
+				" * When sending cash from a zn (Transparent) address, the remining unspent balance is sent to another " +
+				"auto-generated zn address. When sending from a ZC (Private) address, the remining unspent balance remains with " +
+				"the ZC address. In both cases the original sending address cannot be used for sending again until the " +
 				"transaction is confirmed. The address is temporarily removed from the list! Freshly mined coins may only "+
-				"be sent to a Z (Private) address." +
+				"be sent to a ZC (Private) address." +
 			    "</span>");
 		warningPanel.add(warningL, BorderLayout.NORTH);
 		sendCashPanel.add(warningPanel);
@@ -261,7 +261,7 @@ public class SendCashPanel
 					JOptionPane.showMessageDialog(
 							SendCashPanel.this.getRootPane().getParent(), 
 							"An unexpected error occurred when sending cash!\n" + 
-							"Please ensure that the ZCaash daemon is running and\n" +
+							"Please ensure that the ZCash daemon is running and\n" +
 							"parameters are correct. You may try again later...\n" +
 							errMessage, 
 							"Error in sending cash", JOptionPane.ERROR_MESSAGE);
@@ -490,7 +490,7 @@ public class SendCashPanel
 								"<html><span style=\"color:green;font-weight:bold\">SUCCESSFUL</span></html>");
 							JOptionPane.showMessageDialog(
 									SendCashPanel.this.getRootPane().getParent(), 
-									"Succesfully sent " + amount + " ZCL from address: \n" +
+									"Succesfully sent " + amount + " ZEN from address: \n" +
 									sourceAddress + "\n" +
 									"to address: \n" +
 									destinationAddress + "\n", 

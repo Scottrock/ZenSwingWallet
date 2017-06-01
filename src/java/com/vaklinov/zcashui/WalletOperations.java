@@ -199,7 +199,7 @@ public class WalletOperations
 			JOptionPane.showMessageDialog(
 				this.parent, 
 				"The wallet has been backed up successfully to file: " + f.getName() + "\n" +
-				"in the backup directory provided to zcashd (-exportdir=<dir>).",
+				"in the backup directory provided to zend (-exportdir=<dir>).",
 				"Wallet is backed up...", JOptionPane.INFORMATION_MESSAGE);
 			
 		} catch (Exception e)
@@ -256,9 +256,9 @@ public class WalletOperations
 				this.parent, 
 				"The wallet private keys have been exported successfully to file:\n" + 
 				f.getName() + "\n" +
-				"in the backup directory provided to zcashd (-exportdir=<dir>).\n" +
+				"in the backup directory provided to zend (-exportdir=<dir>).\n" +
 				"You need to protect this file from unauthorized access. Anyone who\n" +
-				"has access to the private keys can spend the ZCL balance!",
+				"has access to the private keys can spend the ZEN balance!",
 				"Wallet private key export...", JOptionPane.INFORMATION_MESSAGE);
 			
 		} catch (Exception e)
@@ -378,7 +378,7 @@ public class WalletOperations
 			}
 			
 			// TODO: We need a much more precise criterion to distinguish T/Z adresses;
-			boolean isZAddress = address.startsWith("z") && address.length() > 40;
+			boolean isZAddress = address.startsWith("zc") && address.length() > 40;
 			
 			String privateKey = isZAddress ?
 				this.clientCaller.getZPrivateKey(address) : this.clientCaller.getTPrivateKey(address);
@@ -394,7 +394,7 @@ public class WalletOperations
 			
 			JOptionPane.showMessageDialog(
 				this.parent, 
-				(isZAddress ? "Z (Private)" : "T (Transparent)") +  " address:\n" +
+				(isZAddress ? "ZC (Private)" : "zn (Transparent)") +  " address:\n" +
 				address + "\n" + 
 				"has private key:\n" +
 				privateKey + "\n\n" +
@@ -457,14 +457,14 @@ public class WalletOperations
         JOptionPane.showMessageDialog(
             this.parent,
             "For security reasons the wallet may be backed up/private keys exported only if\n" +
-            "the zcashd parameter -exportdir=<dir> has been set. If you started zcashd \n" +
+            "the zend parameter -exportdir=<dir> has been set. If you started zend \n" +
             "manually, you ought to have provided this parameter. When zcashd is started \n" +
             "automatically by the GUI wallet the directory provided as parameter to -exportdir\n" +
             "is the user home directory: " + OSUtil.getUserHomeDirectory().getCanonicalPath() +"\n" +
             "Please navigate to the directory provided as -exportdir=<dir> and select a\n"+ 
             "filename in it to backup/export private keys. If you select another directory\n" +
             "instead, the destination file will still end up in the directory provided as \n" +
-            "-exportdir=<dir>. If this parameter was not provided to zcashd, the process\n" +
+            "-exportdir=<dir>. If this parameter was not provided to zend, the process\n" +
             "will fail with a security check error. The filename needs to consist of only\n" + 
             "alphanumeric characters (e.g. dot is not allowed).\n\n" +
             "(This message will be shown only once)",

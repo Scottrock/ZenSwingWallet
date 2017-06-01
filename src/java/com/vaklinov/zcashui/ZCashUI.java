@@ -98,7 +98,7 @@ public class ZCashUI
     public ZCashUI(StartupProgressDialog progressDialog)
         throws IOException, InterruptedException, WalletCallException
     {
-        super("ZClassic Swing Wallet UI 0.62.1 (beta)");
+        super("Zen Swing Wallet UI 0.62.1 (beta)");
         
         if (progressDialog != null)
         {
@@ -320,7 +320,7 @@ public class ZCashUI
 
                 JOptionPane.showMessageDialog(
                     ZCashUI.this.getRootPane().getParent(),
-                    "The ZClassic GUI Wallet is currently considered experimental. Use of this software\n" +
+                    "The Zen GUI Wallet is currently considered experimental. Use of this software\n" +
                     "comes at your own risk! Be sure to read the list of known issues and limitations\n" +
                     "at this page: https://github.com/vaklinov/zclassic-swing-wallet-ui\n\n" +
                     "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n" +
@@ -374,7 +374,7 @@ public class ZCashUI
         {
         	OS_TYPE os = OSUtil.getOSType();
         	
-            System.out.println("Starting ZClassic Swing Wallet ...");
+            System.out.println("Starting Zen Swing Wallet ...");
             System.out.println("OS: " + System.getProperty("os.name") + " = " + os);
             System.out.println("Current directory: " + new File(".").getCanonicalPath());
             System.out.println("Class path: " + System.getProperty("java.class.path"));
@@ -403,7 +403,7 @@ public class ZCashUI
 	            }
             }
             
-            // If zcashd is currently not running, do a startup of the daemon as a child process
+            // If zend is currently not running, do a startup of the daemon as a child process
             // It may be started but not ready - then also show dialog
             ZCashInstallationObserver initialInstallationObserver = 
             	new ZCashInstallationObserver(OSUtil.getProgramDirectory());
@@ -430,7 +430,7 @@ public class ZCashUI
                 if ((wce.getMessage().indexOf("{\"code\":-28") != -1) || // Started but not ready
                 	(wce.getMessage().indexOf("error code: -28") != -1))
                 {
-                	System.out.println("zcashd is currently starting...");
+                	System.out.println("zend is currently starting...");
                 	daemonStartInProgress = true;
                 }
             }
@@ -439,7 +439,7 @@ public class ZCashUI
             if ((zcashdInfo.status != DAEMON_STATUS.RUNNING) || (daemonStartInProgress))
             {
             	System.out.println(
-            		"zcashd is not runing at the moment or has not started/synchronized 100% - showing splash...");
+            		"zend is not runing at the moment or has not started/synchronized 100% - showing splash...");
 	            startupBar = new StartupProgressDialog(initialClientCaller);
 	            startupBar.setVisible(true);
 	            startupBar.waitForStartup();
@@ -470,7 +470,7 @@ public class ZCashUI
             {
                 JOptionPane.showMessageDialog(
                         null,
-                        "It appears that zcashd has been started but is not ready to accept wallet\n" +
+                        "It appears that zend has been started but is not ready to accept wallet\n" +
                         "connections. It is still loading the wallet and blockchain. Please try to \n" +
                         "start the GUI wallet later...",
                         "Wallet communication error",
@@ -479,9 +479,9 @@ public class ZCashUI
             {
                 JOptionPane.showMessageDialog(
                     null,
-                    "There was a problem communicating with the ZClassic daemon/wallet. \n" +
-                    "Please ensure that the ZClassic server zcashd is started (e.g. via \n" + 
-                    "command  \"zcashd --daemon\"). Error message is: \n" +
+                    "There was a problem communicating with the Zen daemon/wallet. \n" +
+                    "Please ensure that the Zen server zend is started (e.g. via \n" + 
+                    "command  \"zend --daemon\"). Error message is: \n" +
                      wce.getMessage() +
                     "See the console output for more detailed error information!",
                     "Wallet communication error",
