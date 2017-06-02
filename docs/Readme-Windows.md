@@ -2,7 +2,7 @@
 
 This version of the swing wallet does not have a windows version at present - when it does, you could follow these instructions:
 
-The [ZEN](https://zencash.io/) development team has released a [version for Windows](https://github.com/z-classic/zclassic/releases/tag/v1.0.5a).
+The [ZEN](https://zencash.io/) development team has released a **[version for Windows](https://github.com/z-classic/zclassic/releases/tag/v1.0.5a).**
 Before installing the GUI wallet on Windows you need to install Zen on Windows.
 
 ![Screenshot](https://github.com/vaklinov/zclassic-swing-wallet-ui/raw/master/docs/ZClassicWalletWindows.png "Zen Wallet for Windows")
@@ -11,9 +11,15 @@ Before installing the GUI wallet on Windows you need to install Zen on Windows.
 
    1.1. Download the Zen node [zen windows binarys](https://github.com/cronicc/zen/releases/tag/v.2.0.8-4) also available [here](https://github.com/Scottrock/zen-swing-wallet-ui/blob/master/Win64/Zen%20Clients.zip)
 
-   1.2. Unzip the file so that the executables `zend.exe` and `zen-cli.exe` are in one directory.
+   1.2. Unzip the file so that the executables `zend.exe` and `zen-cli.exe` are in one directory. READ THE README.
    
    1.3. run the included `start zend.bat`
+
+   1.4. wait for the batch file to create directories in your %APPDATA% folder and download (happens once)
+
+   1.5. wait for the batch file to download and install the ZCash proving keys in %APPDATA% (happens once)
+
+   1.6. wait for the zend node to start - READ THE README ABOUT STOPPING THE NODE (or use the `stop node.bat`)
 
 2. Installing the Zen Desktop GUI wallet
 
