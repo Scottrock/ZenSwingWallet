@@ -41,7 +41,7 @@ Users who insist on downloading a binary release - try another product
 
    As a start you need to clone the zen-swing-wallet-ui Git repository:
    ```
-   user@ubuntu:~/build-dir$ git clone https://github.com/vaklinov/zclassic-swing-wallet-ui.git
+   user@ubuntu:~/build-dir$ git clone https://github.com/Scottrock/zen-swing-wallet-ui.git
    ```
    Change the current directory:
    ```
