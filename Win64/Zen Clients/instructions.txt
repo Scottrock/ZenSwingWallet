@@ -1,8 +1,0 @@
-Built from commit 5324564429328bed6a58405f76b1acbbb81f3121
-
-To start zend just run "start zend.bat"
-
-To open a command prompt in the current folder type "cmd" in the explorer address field,
-then type ".\zen-cli.exe help" to see a list of available commands.
-
-To stop zend run ".\zen-cli.exe stop", ctrl+c does not cleanly shut down zend. You will have to kill it in Task Manager.
