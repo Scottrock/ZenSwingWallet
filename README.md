@@ -7,12 +7,14 @@ presents the information in a user-friendly manner.
 
 ![Screenshot](https://github.com/Scottrock/zen-swing-wallet-ui/blob/master/docs/ZenWallet.png "Main Window")
 
+**A VERY unstable windows build of this project is available**
+The details of how to use / install it are available [HERE](https://github.com/Scottrock/zen-swing-wallet-ui/blob/master/docs/Readme-Windows.md)
 
 ## Building, installing and running the Wallet GUI
 
 
 **For security reasons it is recommended to always build the GUI wallet program from GitHub**
-**[source](https://github.com/vaklinov/zclassic-swing-wallet-ui/archive/master.zip).**
+**[source](https://github.com/Scottrock/zen-swing-wallet-ui).**
 The details of how to build it are described below (easy to follow).
 Users who insist on downloading a binary release - try another product 
 
