@@ -27,7 +27,9 @@ Before installing the GUI wallet on Windows you need to install Zen on Windows.
 
    2.2. You may Download the file [ZenSwingWalletUI.jar](https://github.com/Scottrock/zen-swing-wallet-ui/tree/master/Win64/Wallet%20Binary)
    and place it in the same folder as `zend.exe` and `zen-cli.exe`. The result needs to be similar to:
-![Screenshot](https://github.com/vaklinov/zclassic-swing-wallet-ui/raw/master/docs/ZClassicWinDir.png "ZClassic directory on Windows")
+![Screenshot](https://github.com/vaklinov/zclassic-swing-wallet-ui/raw/master/docs/ZClassicWinDir.png "Zen directory on Windows")
+
+   2.3. **ENSURE THE SHA256 CHECKSUM FOR THE FILE IS 4adeed6c29c54fe958272b305c7e21bd458e12275d4a4aab189c9c15b3a297f0** if not **SOMETHING IS WRONG - DISCARD THE FILE**
 
 4. Running the installed Zen GUI wallet
 
