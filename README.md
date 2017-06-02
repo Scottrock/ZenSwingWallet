@@ -61,7 +61,7 @@ Users who insist on downloading a binary release - try another product
 
 3. Installing the built Zen GUI wallet
 
-   3.1. If you have built ZClassic from source code:
+   3.1. If you have built Zen from source code:
 
    Assuming you have already built from source code [ZEN](https://zencash.io/) in directory `/home/user/zen/src` (for 
    example - this is the typical build dir. for Zen RC2) which contains the command line tools `zen-cli` 
