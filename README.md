@@ -7,7 +7,6 @@ presents the information in a user-friendly manner.
 
 ![Screenshot](https://github.com/Scottrock/zen-swing-wallet-ui/blob/master/docs/ZenWallet.png "Main Window")
 
-#### New/Experimental: [Zen Desktop GUI Wallet for Windows](https://github.com/vaklinov/zclassic-swing-wallet-ui/blob/master/docs/Readme-Windows.md) is available
 
 ## Building, installing and running the Wallet GUI
 
