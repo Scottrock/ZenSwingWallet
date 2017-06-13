@@ -1,8 +1,8 @@
 # [ZEN](https://zensystem.io/) Desktop GUI Wallet - for Windows
 
-This version of the swing wallet does not have a windows version at present - when it does, you could follow these instructions:
+This version of the swing wallet does not have a native windows version at present - but the java file will run with some dependencies on top of the node binaries if you follow these instructions:
 
-The [ZEN](https://zensystem.io/) development team has released a **[version for Windows](https://github.com/ZencashOfficial/zen).**
+The [ZEN](https://zensystem.io/) development team has released a **[Wallet for Windows (Eleos)](https://github.com/ZencashOfficial/eleos).** - But, if that is not to your taste, please keep reading.
 Before installing the GUI wallet on Windows you need to install Zen on Windows.
 
 ![Screenshot](https://github.com/vaklinov/zclassic-swing-wallet-ui/raw/master/docs/ZClassicWalletWindows.png "Zen Wallet for Windows")
