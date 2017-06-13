@@ -2,7 +2,7 @@
 
 This version of the swing wallet does not have a windows version at present - when it does, you could follow these instructions:
 
-The [ZEN](https://zencash.io/) development team has released a **[version for Windows](https://github.com/z-classic/zclassic/releases/tag/v1.0.5a).**
+The [ZEN](https://zencash.io/) development team has released a **[version for Windows](https://github.com/zencashio/zen).**
 Before installing the GUI wallet on Windows you need to install Zen on Windows.
 
 ![Screenshot](https://github.com/vaklinov/zclassic-swing-wallet-ui/raw/master/docs/ZClassicWalletWindows.png "Zen Wallet for Windows")
